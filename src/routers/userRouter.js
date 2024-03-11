@@ -1,6 +1,6 @@
 import express from "express";
 //controller
-import { editUser,remove,logout,see } from "../controllers/userController";
+import { editUser,remove,logout,see,startGithubLogin,finishGithubLogin } from "../controllers/userController";
 
 //유저 라우터 생성
 const userRouter=express.Router();
@@ -9,6 +9,8 @@ const userRouter=express.Router();
 userRouter.get("/logout",logout);
 userRouter.get("/edit",editUser);
 userRouter.get("/remove",remove);
+userRouter.get("/github/start",startGithubLogin);
+userRouter.get("/github/finish",finishGithubLogin);
 userRouter.get(":id",see);
 
 
