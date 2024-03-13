@@ -33,6 +33,7 @@ app.use(localsMiddleware); //세션을 템플릿과 공유하는 미들웨어, �
 //routers
 app.use("/",rootRouter);
 app.use("/uploads",express.static("uploads")); //uploads folder files is could see at browser
+app.use("/static",express.static("assets"));
 app.use("/videos",videoRouter);
 app.use("/users",userRouter);
 
