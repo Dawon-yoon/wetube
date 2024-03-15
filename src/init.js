@@ -2,6 +2,7 @@ import "dotenv/config"; //가장 먼저 불러와야함&env파일에 숨겨둔 k
 import "./db";
 import "./models/Video";
 import "./models/User";
+import "./models/Comment";
 import app from "./server";
 
 const PORT=4000;

@@ -10,7 +10,7 @@ form {
     }
 }
 
-input {
+input:not(input[type="range"]) {
     all: unset;
     padding: 15px 20px;
     border-radius: 5px;
@@ -27,7 +27,7 @@ input {
 }
 
 input[type="submit"],
-.social__btn {
+.social__btn,#startBtn {
     border-radius: 5px;
     padding: 12px 20px;
     background-color: white;
@@ -35,4 +35,14 @@ input[type="submit"],
     text-align: center;
     cursor: pointer;
     display: block;
+}
+
+#preview{
+    max-width: 470px; 
+    margin: 0 auto;
+    display: block;
+}
+#startBtn{
+    margin: 0 auto;
+    
 }
