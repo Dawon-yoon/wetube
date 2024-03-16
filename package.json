@@ -2,13 +2,13 @@
   "name": "wetube",
   "version": "1.0.0",
   "description": "watch videos",
-  "main": "index.js",
+  "main": "init.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Dawon-yoon/wetube.git"
   },
   "scripts": {
-    "start":"node build/index.js",
+    "start":"node build/init.js",
     "build":"npm run build:server && npm run build:assets",
     "build:server":"babel src -d build",
     "build:assets":"webpack --mode=production",
