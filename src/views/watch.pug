@@ -19,6 +19,11 @@ block content
             div
                 span#fullScreen
                     i.fas.fa-expand
+    div
+    if String(video.owner._id) === String(loggedInUser._id)
+            a(href=`${video.id}/edit`) Edit Video &rarr; 
+            br
+            a(href=`${video.id}/delete`) Delete Video &rarr;
     if loggedIn                
         div.video__add-comments 
             form.video__comment-form#commentForm
